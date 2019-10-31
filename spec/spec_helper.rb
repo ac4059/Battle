@@ -17,6 +17,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require './app.rb'
+require 'features/web_helpers'
 Capybara.app = Battle
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
