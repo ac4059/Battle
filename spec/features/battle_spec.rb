@@ -5,13 +5,6 @@ feature "Enter names" do
    end
 end
 
-feature "View hit points" do
-   scenario "see Player 2's hit points" do
-     sign_in_and_play
-     expect(page).to have_text("Nat = 20HP")
-   end
-end
-
 feature "Attack" do
   scenario "attack player 2" do
     sign_in_and_play
@@ -24,8 +17,8 @@ feature "Attack" do
    sign_in_and_play
    click_button "Attack"
    click_button 'OK'
-   expect(page).not_to have_content 'Natalie: 60HP'
-   expect(page).to have_content 'Natalie: 50HP'
+   expect(page).not_to have_content 'Nat: 60HP'
+   expect(page).to have_content 'Nat: 50HP'
  end
 end
 end
