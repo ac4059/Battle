@@ -3,7 +3,7 @@ require 'Game'
 describe Game do
   subject(:arjun) {Player.new("Arjun") }
   subject(:natalie) {Player.new('Nat')}
-  subject(:game) {Game.new}
+  subject(:game) {Game.new(arjun,natalie)}
 
   describe '#attack' do
     it 'damages the player' do
